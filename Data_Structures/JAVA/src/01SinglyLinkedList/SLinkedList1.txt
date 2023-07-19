@@ -1,0 +1,41 @@
+DELETE FUNCTION IN LINKED LIST
+------------------------------>
+
+Let's divide it to three parts,
+1.DELETE from head,
+2.DELETE from between,
+3.DELETE from tail
+
+Take the first case:
+what happens when we delet a node from the head?
+Certainly the head moves to the second element,but how the second element
+connected with first,we know that first.next is the second element.then,
+we can write it like this,
+Node temp = null;
+temp = head;
+head = temp.next;
+
+Now we can take the second case:
+between the nodes, we can predict which node consists of the data tha user
+want to delet we have to check each element in the linkedlist to verify
+so we have to use loop, but we dont have certain numerical limits,
+we only know that condition,then we should use while loop,
+
+what is the value of temp now,its head.we want itrete from head itself
+the condition is very simple whenever the temp = null and data matches 
+break the loop
+but what is really happening when we delete such a way 
+connect a previous node's next with data's next .
+
+while(temp != null && temp.data != data){
+    prev = temp;
+    temp = temp.next
+}
+prev.next = temp.next; 
+
+here pre is a node befor the data and temp is the node contains data,temp.data
+the next element of the node(data)
+
+then how can i delete from the tail
+what is the peculiarity of tail
+tail.next == null

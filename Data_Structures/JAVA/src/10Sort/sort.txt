@@ -1,0 +1,17 @@
+Types of sort
+----------------
+Bubble sort
+Insertion sort
+Selection sort
+Quick sort
+Heap sort
+Merge sort
+
+complexiety of 
+Bubble,Insertion , Selection sort is O(n*n)
+Quick, Heap, Merge sort is O(nlogn)
+complexiety of logn is better than n
+so that is nlogn is better here
+
+bubble sort - O(n*n)T,O(1)S
+Insertion - 0(n*n)T, O(1)S

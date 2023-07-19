@@ -1,0 +1,36 @@
+You have might confused little bit
+Here i am trying to explain at my best
+
+Remember first you have to traverse over to find the target and
+remove it so itrate over
+how to iterate in a tree
+
+properties
+-----------
+each Node has one right node and left Node
+it is connected each other with parent child relation ship
+
+itretion
+---------
+1. assign currentNode = root;
+2. if targetData < currentNode.data,
+then:currentNode =currentNode.left
+3. else if targetData > currentNode.data,
+then:currentNode = currentNode.right 
+4. else: it will be the target value
+
+but there are many cases we have to check
+
+case:1
+    10
+   / \
+  8   11
+ / \
+4   9
+
+1. Here we have to remove 10 ,currentNode = root;
+2. check currentNode has both left and right Node 
+   left !=null && currentNode.right !=null
+3. replace the 10 by the smallest value in the right side
+   to get minimum value we are creating a recursive function
+   called getMinValue hase parameter

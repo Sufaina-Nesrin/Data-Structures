@@ -1,0 +1,61 @@
+   graph
+---------------
+types of graphs:-
+unidirectional
+biderectional
+cyclic graph
+non-cyclic graph
+disconnected graph
+
+real life case:- 
+mutual friends in social media
+google maps
+
+components:-
+vertices - the node part
+edges - the connection part
+
+     A--->B--->C
+    / \     /
+   D   E<---F
+        \
+         G
+
+hashMap (key-value)
+take the vertex as key and value as edge
+ {
+   A:[B,D,E]
+   B:[C]
+   C:[F]
+   D:[]
+   E:[G]
+   F:[E]
+   G:[]
+ }     
+
+e:edge,
+v:vertices
+
+creating a new graph
+complexiety of time and space - O(e+v)TS   
+
+inserting new element to the graph
+one vertex and one or more edges
+then the complexiety depends on the edges
+so complexiety = O(e)TS
+
+deleting a vertex or node
+we have to check every edges that consists of the specific edge
+O(e)T
+O(1)S
+
+get a vertex
+to get a vertex, we know that find a key in a hashMap takes 0(1)T
+so complexiety = 0(1)T
+
+Traverse
+two types of traversal
+Breadth First Search - (BTS) 
+Depth First Search (DFS)
+complexiety - O(e+v)T
+

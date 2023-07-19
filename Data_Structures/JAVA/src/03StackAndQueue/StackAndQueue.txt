@@ -1,0 +1,8 @@
+Example for stack - the undo process
+
+removing an element from end of the stack and queue -0(1)
+removing an element from first of the stack and queue- 0(1)
+
+stack - add(push),delete(pop)
+queue - Enqueue(arranging in a queue)
+queue - Dequeue(remove from the queue)

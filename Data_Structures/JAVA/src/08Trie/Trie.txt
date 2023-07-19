@@ -1,0 +1,14 @@
+"sufaina"
+"suff"
+"hello"
+"helloworld"
+
+length of a string represents - l
+no of strings - n
+
+worst case complexity = 0(l*n)TS
+
+add,
+remove
+
+suffix tree problem

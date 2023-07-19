@@ -1,0 +1,32 @@
+HEAP
+min heap,max heap
+represents by array
+
+leftChild - 2*i+1
+rightChild - 2*i+2
+
+parent - (i-1)/2  (7-1)/2 = 6/2 =3
+
+insertion complexiety O(logn) time
+space complexiety O(1)
+
+insert - compare with parent
+
+delete - compare with children(we only delete from the top value)
+to delete this assign top by the biggest value
+then compare with its children
+
+build a minHeap from an array
+[10,5,25,3,22,12]
+     10
+    /  \
+   5    25
+ /  \     \
+
+3    22    12
+take a last parent means 25
+compare its children to find small
+then swap with its smallest children
+then take the next parent do the same
+
+complexiety 0(n)T

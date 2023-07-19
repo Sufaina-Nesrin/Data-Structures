@@ -1,0 +1,52 @@
+*lets come to the problem
+Here we have to add or create a Linked List
+we know that linkedList consits of node that have data and refrence 
+
+Here we used to add data using a function called addNode(num)
+with parameter a number
+whenver it calls,an object created and assigned that num to data variable in that specific object
+as we already defined in that addNode function
+and it checks head is null(we already defined it as empty)
+if it is true then add the new object to the head
+head = newObj;
+tail = newObj
+though the head and tail is same for the element if there is oly the 
+elment itself also there is no need of next(reference of another element)
+
+if it is false(means there is already an element exists),then
+take the tail's next(reference) and then assign the newObj and 
+replace tail with newObj
+tail.next = newObj;
+tail = newObj;
+
+this continous whenever the new num is added
+This is how new LinkeList created and new elements are added
+note:if new LinkedList created with one element and it has no next(referemce)
+if there is another element added to to the existing linked List then
+add the ref of the new to the previous and add the new element without refernce
+   ------------------------------------------------------------
+      IF YOU DONT UNDERSTAND ALL THESE THEN TRY TO READ THIS
+   ------------------------------------------------------------
+
+Hello worldies,
+As a javascript developer,it was a little hard digestable thing to me
+After a While I searched and found some statements
+Here is the simple explanation>>>>>
+here we have main class called SLinkedList
+inside of that a class called Node(it will be considered as base structure of each node in the linked list)
+what are the things will be in a node of a linked list?
+it has two variables,a data and a reference to another node?exactly.
+here we assume data will be integer type. you can take any dataType
+here we named our reference is named as next.what actually next contains
+reference to the next node,we can take it as node 
+so we take the dataType as node.understan? if not or you are javascript 
+developer then just think about the let key word what does the let key word
+actually doing, we know we dont have to specify the datatype whatever it is
+we also have classes and objects inside of the javascipt also 
+then what will be the dataType of the object that we make from the specific
+class? we cant predict with int string whatever it is, it is the combination
+of primary dataTypes right? but we dont bother this when we use it with
+javascript. let's come to the point, here Node is class and we can declare
+variables with that special kind of datatType called Node
+whatever the class we can declare or intialize with that specific dataType
+

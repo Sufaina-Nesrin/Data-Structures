@@ -1,0 +1,38 @@
+[ | | |]
+
+Non-linear Type->tree
+my computer folder in pc
+
+conditions for a tree
+should not have more than one parent
+should not form cycle
+dont disconnected
+
+highest branch
+binary
+ternary
+k-ary
+
+properties
+binary search tree(BST)
+HEAPS-(complete tree, full tree, perfect tree)
+Tries
+
+complete = fill the node till last or except last level
+
+BST 
+it is a binary tree
+it has one root node
+and it left node contains the number less than the root
+right contains the number greater than the root
+it repeats over the entire tree on the basis of parent
+
+complexiety 
+insert - 0(logn) - (average case)
+worst case = 0(n)
+delete - 0(logn)
+
+3 Types of traversing :0(n)
+inOrder - (left->root->right)
+preOrder - (root->left->right)
+PostOrder - (left->right->root)

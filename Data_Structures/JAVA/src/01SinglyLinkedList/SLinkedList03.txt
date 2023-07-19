@@ -1,0 +1,18 @@
+we ha some nodes
+[4|next]....[3|next]....[3|next]....[3|next]....[6|next]
+
+we have to print this by removing duplications.
+the answer looks like 
+[4|next]....[3|next]....[6|next]
+
+we have one head and a tail
+1.Assign the head into temp
+2.iterete over it whenever temp gets null
+3.Assign temp.next to the next variable
+4start another while loop that checks next and current has same value
+5.next assign next.next//here we iterate over whenever it reaches different
+element to avoid duplications
+6.then we get a new element to the next variable when we get out off the loop
+7.then we assign the next to the current.next, (current.next = next)
+8then assign next to the current(current = next)
+9.and also checks next is tail,tail = current
