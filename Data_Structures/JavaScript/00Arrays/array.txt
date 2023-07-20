@@ -1,0 +1,81 @@
+operations in array
+-------------------->
+init - create or initialize an array ,
+get - get an element,
+set - set an elment by replacing another,
+traverse - travel along the array,
+insert - insert an element to the array not replacing another,
+delete - delete an element.
+
+
+.init
+------->
+let initialize an array
+a[6] - it is initialization,
+a[] - it is just declaration,
+------or------------//open material education
+in java
+a = new int[7]; ->
+time complexity - 0(n)T, 
+memory complexity - 0(n)S
+we can write - 0(n)TS
+conclusion whenever we initialize an array the time and space complexity will be 0(n)ST
+
+.set
+------>
+we have an array called arr=[1, 2, 3, 4, 5, 6]
+arr[2] = 33
+here this statement is replacibg 3 to 33 in the array
+ther is no need of extra space to do this then,
+SPACE COMPLEXITY = 0(1)ST
+
+but in the case of assigning values in array using for loop the 
+0(n)T
+0(n)S
+
+get
+------>
+b = arr[i]
+here also there is no need of time and space
+0(1)ST
+
+traverse
+---------->
+to travel along the array, there is no need of extra space but need time
+0(1)S
+0(n)T
+
+insert
+------->
+we cannot inset 8th element to an array has size 7
+to do so that we should create a new array, then copy the elements in the first array to second
+then insert new ;
+here the after the specific operation we deleting the first array,so that the memory is only need
+for the latest element in the array
+but we have to copy each elemtnt to the array, so that we took n time to do that
+SPACE COMPLEXITY - 0(1)S
+TIME COMPLEXITY  - 0(n)T
+
+delete
+-------->
+0(1)ST
+when we delete an element from the last index array the complexity 
+COMPLEXITY 0(1)TS
+but in the case of delete an element from other than last index, then we have replace the 
+elements after the deleted element,the worst case of this  complexity will be
+0(n)T and 0(1)S
+it doesnot take any extra space
+
+java and c contains statuic array and javascript and python contains dynamic array
+
+-------------->
+DYNAMIC array
+-------------->
+when we create an dynamic array , it allocattes double of its space
+then whenever an extra elemnt added to that array we dont need to copy all the elements to the 
+new array so we dont have any extra time to do that so
+TIME COMPLEXITY - 0(1)TS
+
+but we have to add more than of the size of its double then,
+we have time and space complexity 
+0(n)TS

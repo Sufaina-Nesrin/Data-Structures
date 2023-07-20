@@ -1,0 +1,73 @@
+linked list is the collection of node
+one node consists of one data and with the address of another data location
+
+apart from array, it is non contiguous memory allocation
+its not required back to back memory location
+
+OPERATIONS IN LINKED list
+Init,
+Set,
+Get,
+Traverse,
+Insert,
+Delete.
+
+sample linked list
+[3|a]. . . .[2|a]
+           .
+           .
+           . .[4|a]. . . .[5|a]
+
+Init
+------>
+0(1)ST
+bcz we have to create one node at a time
+
+Set & Get
+------------>
+we cannot directly assign or get a value with the position like in array we have go through all 
+of its node to find the element bcs the location of each array is in the previous of itself
+TIME complexity = 0(n)T
+SPACE complexity = 0(1)S
+
+
+Traverse
+----------->
+go through all elements
+0(n)T
+0(1)S
+
+
+Insert
+--------->
+what we had done in the array to insert an element in the array, means the there is an array with
+specific size and it is full then we have to insert an new element
+it will copy all the elements to new array and insert the element and delete the old array0(n)T
+BUT, in the case of Linked List, we can put element in the head and in the tail
+in head
+.......
+just create a node anywhere in the memory space with the address of first node
+COMPLEXITY 0(1)TS
+
+in tail 
+........
+there is two cases 0(1)T and 0(n)T
+0(1)S
+
+insert btween Linked List
+...........................
+complexity 0(n)T
+0(1)S
+
+Delete
+---------->
+0(n)T
+
+An advantage of Linked Lists
+Nodes can easily be removed or added from a linked list without 
+reorganizing the entire data structure. 
+This is one advantage it has over arrays.
+
+Disadvantages of Linked Lists
+Search operations are slow in linked lists. Unlike arrays, random access of data elements is not allowed. Nodes are accessed sequentially starting from the first node.
+It uses more memory than arrays because of the storage of the
