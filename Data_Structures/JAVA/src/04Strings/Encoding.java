@@ -9,16 +9,17 @@ public class Encoding {
         if(letterPosition <= 122){//check the number thats inside of the z
              charArray[i] = (char)letterPosition;//if yes directly assign
              //to the new array
-        // }else{// if not add 
-        //     charArray[i] = (char) ( 96+letterPosition%122);
-        // }
+        }else{
+    // if not add 
+        charArray[i] = (char) ( 96+(letterPosition-122));
+         }
      }
-    }
+ 
 
        return new String(charArray);
     }
     public static void main(String[] args) {
-        String value = "kjfk";
+        String value = "zxy";
         System.out.println((change(value,27)));
     }
 }

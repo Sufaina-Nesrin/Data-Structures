@@ -60,7 +60,7 @@ public class Tree{
     }
 
     public void remove(int data){
-removeHelper(data,root,null);
+     removeHelper(data,root,null);
     }
 
     private void removeHelper(int data, Node currentNode, Node parentNode){
